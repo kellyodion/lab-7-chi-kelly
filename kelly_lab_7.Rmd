@@ -24,4 +24,13 @@ Is there a signficant difference in recommended gun control action in male and f
 
 Hey
 
+Kelly: data wrangling and counts 
+
+```{r}
+get_guns <- gc %>% 
+  filter(gender!= "NA", make_get_guns != "NA") %>% 
+  count(gender, make_get_guns)
+
+
+```
 
